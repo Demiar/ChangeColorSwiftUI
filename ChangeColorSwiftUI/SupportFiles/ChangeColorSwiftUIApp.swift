@@ -12,6 +12,7 @@ struct ChangeColorSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onAppear(perform: UIApplication.shared.addTapGestureRecognizer)
         }
     }
 }

@@ -11,6 +11,9 @@
 		8A31D4C926B3F98900779241 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A31D4C826B3F98900779241 /* ContentView.swift */; };
 		8A31D4CB26B3F99000779241 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A31D4CA26B3F99000779241 /* Assets.xcassets */; };
 		8A31D4CE26B3F99000779241 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A31D4CD26B3F99000779241 /* Preview Assets.xcassets */; };
+		8A31D4D626B3F9CA00779241 /* SliderCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A31D4D526B3F9C900779241 /* SliderCustom.swift */; };
+		8A31D4D826B4055200779241 /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A31D4D726B4055200779241 /* ColorView.swift */; };
+		8A31D4DA26B57D6700779241 /* ExtensionUIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A31D4D926B57D6700779241 /* ExtensionUIApplication.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		8A31D4CA26B3F99000779241 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A31D4CD26B3F99000779241 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8A31D4CF26B3F99000779241 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A31D4D526B3F9C900779241 /* SliderCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCustom.swift; sourceTree = "<group>"; };
+		8A31D4D726B4055200779241 /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
+		8A31D4D926B57D6700779241 /* ExtensionUIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIApplication.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +58,9 @@
 		8A31D4C526B3F98900779241 /* ChangeColorSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				8A31D4C626B3F98900779241 /* ChangeColorSwiftUIApp.swift */,
-				8A31D4C826B3F98900779241 /* ContentView.swift */,
-				8A31D4CA26B3F99000779241 /* Assets.xcassets */,
-				8A31D4CF26B3F99000779241 /* Info.plist */,
-				8A31D4CC26B3F99000779241 /* Preview Content */,
+				8A31D4DB26B5DD7C00779241 /* View */,
+				8A31D4DD26B5DF5600779241 /* Extensions */,
+				8A31D4DC26B5DDA700779241 /* SupportFiles */,
 			);
 			path = ChangeColorSwiftUI;
 			sourceTree = "<group>";
@@ -67,6 +71,35 @@
 				8A31D4CD26B3F99000779241 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8A31D4DB26B5DD7C00779241 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8A31D4C826B3F98900779241 /* ContentView.swift */,
+				8A31D4D526B3F9C900779241 /* SliderCustom.swift */,
+				8A31D4D726B4055200779241 /* ColorView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8A31D4DC26B5DDA700779241 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8A31D4C626B3F98900779241 /* ChangeColorSwiftUIApp.swift */,
+				8A31D4CA26B3F99000779241 /* Assets.xcassets */,
+				8A31D4CF26B3F99000779241 /* Info.plist */,
+				8A31D4CC26B3F99000779241 /* Preview Content */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		8A31D4DD26B5DF5600779241 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8A31D4D926B57D6700779241 /* ExtensionUIApplication.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A31D4D826B4055200779241 /* ColorView.swift in Sources */,
+				8A31D4DA26B57D6700779241 /* ExtensionUIApplication.swift in Sources */,
 				8A31D4C926B3F98900779241 /* ContentView.swift in Sources */,
 				8A31D4C726B3F98900779241 /* ChangeColorSwiftUIApp.swift in Sources */,
+				8A31D4D626B3F9CA00779241 /* SliderCustom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,11 +304,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"ChangeColorSwiftUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ChangeColorSwiftUI/SupportFiles/Preview Content\"";
 				DEVELOPMENT_TEAM = 4A5GSXMSS8;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ChangeColorSwiftUI/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				INFOPLIST_FILE = ChangeColorSwiftUI/SupportFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -280,7 +316,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "-.ChangeColorSwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -290,11 +326,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"ChangeColorSwiftUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ChangeColorSwiftUI/SupportFiles/Preview Content\"";
 				DEVELOPMENT_TEAM = 4A5GSXMSS8;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ChangeColorSwiftUI/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				INFOPLIST_FILE = ChangeColorSwiftUI/SupportFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +338,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "-.ChangeColorSwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
